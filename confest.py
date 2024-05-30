@@ -17,5 +17,6 @@ def test_zip_folder():
 
     new_folder = "resources"
     os.makedirs(new_folder, exist_ok=True)
+    shutil.move("folder.zip", "resources/folder.zip")
     yield
     shutil.rmtree("resources")
