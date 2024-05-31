@@ -3,7 +3,11 @@ import shutil
 import os
 from zipfile import ZipFile
 
-files_zip = ["tmp/Test_csv.csv", "tmp/Test_pdf.pdf", "tmp/Test_xls.xls"]
+files_zip = [
+    "tmp/Test_csv.csv",
+    "tmp/Test_pdf.pdf",
+    "tmp/Test_xls.xls"
+]
 
 
 @pytest.fixture()
