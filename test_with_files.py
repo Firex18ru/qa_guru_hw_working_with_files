@@ -10,7 +10,7 @@ def test_pdf(test_zip_folder):
         with folder_zip.open("tmp/Test_pdf.pdf") as pdf_file:
             reader = PdfReader(pdf_file)
             page = len(reader.pages)
-        assert page == 3
+            assert page == 3
 
         folder_zip.close()
 
